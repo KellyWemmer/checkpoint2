@@ -49,6 +49,9 @@ function update() {
 }
 
 function buyPickAxe() {
-    let purchase = clickUpgrades[Key]
-    console.log()
+    let purchase = clickUpgrades['pickaxes']
+    console.log('axe', purchase)
+        if (purchase.price <= cheese) {
+            
+        }
 }

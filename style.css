@@ -5,4 +5,7 @@ body {
 .upgrade img {
     height: 150px;
     width: 150px;
+    display: block;
+    margin: 0;
+    padding: 0;
 }
