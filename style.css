@@ -9,3 +9,11 @@ body {
     margin: 0;
     padding: 0;
 }
+.cards .card {
+    align-self: flex-start; 
+}
+
+.click-card:hover {
+    transform: translateY(-3px);
+    outline: 1px solid white;
+}
