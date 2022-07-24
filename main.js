@@ -141,10 +141,10 @@ function buyRover () {
 
 //TODO figure this out
 function clickModifier() { 
-  clickUpgrade = 0 //set original balance to 0
+  clickUpgrade = 0 //set balance back to zero to calculate new click upgrade
   for (let key in clickUpgrades) {
-    let tool = clickUpgrades[key]
-    clickUpgrade += tool.multiplier * tool.quantity //calculates click upgrade based on multiplier  
+    let tool = clickUpgrades[key]    
+    clickUpgrade += tool.multiplier * tool.quantity //calculates click upgrade based on multiplier * quantity  
   }
 }
 
