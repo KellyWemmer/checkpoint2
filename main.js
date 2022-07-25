@@ -72,7 +72,7 @@ function drawInventory() {//draws current updates to purchases
 drawInventory()
 
 function mine() {//adds total number of cheese mined from all sources
-  cheese += clickUpgrade + clickAmount + intUpgrade
+  cheese += clickUpgrade + clickAmount //do not want to add auto upgrades here, just click amounts
   //window.alert(cheese)
   updateCheese()
 }
@@ -139,7 +139,6 @@ function buyRover () {
   updateRoverCard()
 }
 
-//TODO figure this out
 function clickModifier() { 
   clickUpgrade = 0 //set balance back to zero to calculate new click upgrade
   for (let key in clickUpgrades) {
@@ -148,7 +147,6 @@ function clickModifier() {
   }
 }
 
-// TODO figure this out
 function collectAutoUpgrades() {
   intUpgrade = 0 //set original balance to zero
   for(let key in automaticUpgrades) {
